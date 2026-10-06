@@ -1,0 +1,182 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Responsive viewport -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+  <!--
+    HERO SECTION
+
+    relative
+    → Allows us to position the background image and overlay
+
+    min-h-[32rem]
+    → Minimum height = 32rem
+
+    flex items-center
+    → Vertically centers the content
+
+    px-16
+    → Adds left and right spacing
+  -->
+  <section
+    class="
+      relative
+      min-h-128
+      flex
+      items-center
+      px-16
+      overflow-hidden
+    "
+  >
+
+    <!-- ============================= -->
+    <!-- BACKGROUND IMAGE -->
+    <!-- ============================= -->
+
+    <img
+      src="https://images.unsplash.com/photo-1660377733370-f88ce7677cc5?q=80&w=1032&auto=format&fit=crop"
+      alt="Background"
+      class="
+        absolute
+        inset-0
+        h-full
+        w-full
+        object-cover
+      "
+    />
+
+
+    <!-- ============================= -->
+    <!-- DARK OVERLAY -->
+    <!-- ============================= -->
+
+    <!--
+      This creates a dark transparent layer
+      over the image.
+
+      This makes the text easier to read.
+    -->
+    <div
+      class="
+        absolute
+        inset-0
+        bg-black/50
+      "
+    ></div>
+
+
+    <!-- ============================= -->
+    <!-- CONTENT -->
+    <!-- ============================= -->
+
+    <!--
+      relative
+      → Puts content above the image and overlay
+
+      z-10
+      → Gives content a higher layer
+    -->
+    <div
+      class="
+        relative
+        z-10
+        w-full
+      "
+    >
+
+      <!-- LEFT CONTENT -->
+
+      <div class="w-1/2">
+
+        <!-- Heading -->
+        <h1
+          class="
+            text-5xl
+            font-extrabold
+            text-white
+          "
+        >
+          Build Better Websites
+        </h1>
+
+
+        <!-- Description -->
+        <p
+          class="
+            mt-5
+            max-w-lg
+            text-lg
+            font-semibold
+            text-gray-200
+          "
+        >
+          Create beautiful websites using HTML and Tailwind CSS.
+        </p>
+
+
+        <!-- ============================= -->
+        <!-- BUTTONS -->
+        <!-- ============================= -->
+
+        <div class="mt-8 flex gap-4">
+
+          <!-- Get Started -->
+          <button
+            class="
+              rounded-2xl
+              bg-blue-600
+              px-8
+              py-3
+              font-semibold
+              text-white
+              hover:bg-blue-700
+            "
+          >
+            Get Started
+          </button>
+
+
+          <!-- Learn More -->
+          <button
+            class="
+              rounded-2xl
+              border
+              border-white/40
+              bg-white/20
+              px-8
+              py-3
+              font-semibold
+              text-white
+              backdrop-blur-sm
+              hover:bg-white/30
+            "
+          >
+            Learn More
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
+

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex gap-6 text-center justify-baseline">
+      <div class="w-64 bg-amber-400 p-6 rounded-2xl shadow-md">
+        <div class="text-3xl">⏩</div>
+        <h3 class="mt-4 text-2xl font-bold">Fast</h3>
+        <p class="mt-2 text-gray-500">Bild it quickly</p>
+      </div>
+      <div class="w-64 p-6 bg-cyan-400 rounded-2xl shadow-md">
+        <div class="text-3xl">😊</div>
+        <h3 class="text-2xl font-bold mt-4">Simple</h3>
+        <p class="mt-2 text-gray-500">Easy to understand</p>
+      </div>
+      <div class="w-64 p-6 bg-green-400 rounded-2xl shadow-md">
+        <div class="text-3xl">👊</div>
+        <h3 class="mt-4 text-2xl font-bold">PowerFull</h3>
+        <p class="mt-2 text-gray-500">Create modern websites</p>
+      </div>
+    </div>
+  </body>
+</html>
